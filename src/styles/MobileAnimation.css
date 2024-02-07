@@ -1,0 +1,28 @@
+.mobile_animation img{
+  width: 360px;
+  height: 1970px;
+} 
+
+.mobile_animation  .dot{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:rgb(118, 206, 235);
+  display: none;
+}
+
+
+.mobile_animation .steps_card img {
+  max-width: 240px;
+  max-height: 240px;
+}
+
+
+.mobile_animation .steps_card:last-child img {
+  max-width: 140px;
+  max-height: 140px;
+  padding: 90px 80px;
+}
+
+
+

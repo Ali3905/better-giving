@@ -1,0 +1,27 @@
+/* Crousal */
+
+.benefits_crousal    .swiper-slide:first-child{
+    background-color: #EDFCE2;
+}
+
+.benefits_crousal  .swiper-slide:nth-child(2){
+    background-color: #F4F0FD;
+}
+
+.benefits_crousal  .swiper-slide:last-child{
+    background-color: #EDF2FE;
+}
+
+.benefits_crousal  .swiper-slide{
+    background: white;
+    text-align: center !important;
+    padding: 20px 80px !important;
+    /* width: 640px !important; */
+    height: 480px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 56px !important;
+    overflow: hidden !important;
+}
