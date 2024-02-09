@@ -34,12 +34,12 @@ const Testimonials = () => {
         <div className='lg:p-[100px] md:px-[30px] md:py-[100px] flex flex-col gap-[50px] relative'>
             {/* <p className='text-center text-[144px] font-bold text-[#2D89C8] leading-3'>“</p> */}
             {/* <div> */}
-            <button className='testimonial-prev p-3 bg-white rounded-full border border-solid shadow lg:static lg:top-0 lg:left-0 absolute top-[60%] left-[2%]  z-10 hidden md:block self-center'>
+            <button className='testimonial-prev p-3 bg-white rounded-full border border-solid shadow absolute top-[60%] left-[2%]  z-10 hidden md:block lg:hidden self-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-[#2D89C8] w-[24px] h-[24px] font-bold">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                 </svg>
             </button>
-            <button className='testimonial-next p-3  bg-white rounded-full border border-solid z-20 shadow lg:static lg:top-0 lg:right-0 absolute top-[60%] right-[2%] hidden md:block self-center'>
+            <button className='testimonial-next p-3  bg-white rounded-full border border-solid z-20 shadow absolute top-[60%] right-[2%] hidden md:block lg:hiddenself-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-[#2D89C8] w-[24px] h-[24px] font-bold ">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
