@@ -20,7 +20,7 @@ const Home = () => {
         <Path />
         <Brands />
         <Animation />
-        <JoinUsBanner />
+        {/* <JoinUsBanner /> */}
         <Video />
         <Testimonials />
         <Blogs />

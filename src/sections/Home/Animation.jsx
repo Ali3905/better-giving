@@ -6,7 +6,7 @@ import TabletAnimation from '../../components/TabletAnimation'
 
 const Animation = () => {
   return (
-    <div className='mb-[72px] flex flex-col'>
+    <div className='mb-[72px] lg:mb-0 flex flex-col'>
         <AnimatedSVG />
         <MobileAnimation />
         <TabletAnimation />

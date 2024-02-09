@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className='flex flex-col lg:gap-[100px] gap-[50px] pt-[50px] DM_Sans'>
             <div className='flex flex-col lg:flex-row md:flex-col px-[24px] lg:px-[93px] md:px-[24px] gap-[60px] items-start'>
                 <div className='flex flex-col gap-[20px] lg:flex-col md:flex-row lg:max-w-[30%] lg:gap-6 md:gap-[70px] md:items-start md:justify-between'>
-                    <p className='text-[#2D85C8] text-2xl font-bold flex items-center gap-1 self-center'>
+                    <p className='text-[#2D85C8] text-2xl font-bold flex items-center gap-1 self-center lg:self-start'>
                         <img src="/logo(3).png" alt="logo" />
                         better.giving
                     </p>

@@ -79,7 +79,7 @@ const MobileAnimation = () => {
 </defs>
 </svg>
        <div class="dot dot1"></div>
-       <div className='absolute top-0 h-full flex flex-col gap-[100px] justify-between px-[38px]'>
+       <div className='absolute top-0 h-full flex flex-col justify-between px-[38px]'>
         <AnimationHeading />
         {
           steps.map((step)=>{

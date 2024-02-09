@@ -78,7 +78,7 @@ const TabletAnimation = () => {
        <div class="dot dot1">
        
        </div>
-       <div className='absolute top-0 h-full flex flex-col justify-between px-[38px]'>
+       <div className='absolute top-0 h-full flex flex-col justify-between px-[38px] mt-[50px]'>
          <AnimationHeading />
         {
           steps.map((step)=>{

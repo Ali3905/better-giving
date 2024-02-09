@@ -9,7 +9,7 @@ const Hero = () => {
       <div className='copy'>
         <p className='Quicksand text-[13px] md:text-[18px]'>Give Today, Give Forever</p>
         <h1 className='lg:w-8/12 md:w-[86%] text-[40px] md:text-[64px] md:text-balance'>Make your donations go further & last forever</h1>
-        <p className='text-2xl font-normal lg:w-8/12 md:w-[90%] text-[16px] md:text-[24px] text-center md:text-balance DM_Sans'>Accepting donations, support every giver, and offering services for free to charities all over the world.</p>
+        <p className='text-2xl font-normal xl:max-w-[800px] lg:w-8/12 md:w-[90%] text-[16px] md:text-[24px] text-center md:text-balance DM_Sans'>Accepting donations, support every giver, and offering services for free to charities all over the world.</p>
         <button className='z-20 Quicksand relative'><span>Join Us -</span> Its free
           <span className='md:flex flex-col items-center absolute top-[50%] right-[-70%] text-[#183244] hidden'>
             <svg xmlns="http://www.w3.org/2000/svg" width="82" height="45" viewBox="0 0 82 45" fill="none">
@@ -23,7 +23,8 @@ const Hero = () => {
         </button>
       </div>
       <div className='h-[400px]'></div>
-      <div className='h-[250px] extra_width absolute bottom-[-20px] left-[-70px] bg-white rounded-full blur-[30px] overflow-x-hidden'></div>
+      <div className='h-[200px] extra_width absolute bottom-[-20px] left-[-70px] bg-white rounded-full blur-[30px] overflow-x-hidden'></div>
+      <div className='h-[50px] extra_width absolute bottom-[-20px] left-[-70px] bg-white rounded-full blur-[10px] overflow-x-hidden'></div>
       {/* <div className='h-[200px] w-[70%] absolute bottom-[-20px] right-[-70px] bg-white rounded-full blur-[30px]'></div> */}
       <div className='h-[200px] extra_width absolute bottom-[230px] left-[-70px] bg-white rounded-full blur-[100px] overflow-x-hidden'></div>
       {/* <div className='h-[200px] w-[30%] absolute bottom-[180px] right-[-70px] bg-white rounded-full blur-[100px]'></div> */}

@@ -51,7 +51,7 @@
 
 
 .extra_width {
-    width: calc(100% + 70px)
+    width: calc(100% + 100px)
 }
 
 .desc > * {
@@ -61,6 +61,26 @@
     line-height: 22px;
     width: fit-content;
 }
+
+
+
+/*  HeroBottom.jsx  */
+
+@media screen and (max-width : 1024px) {
+
+    .left_arrow{
+        position: absolute;
+        top: 50%;
+        left: 2%;
+    }   
+    .right_arrow{
+        position: absolute;
+        top: 50%;
+        right: 2%;
+    }
+}
+
+
 
 /*  Brands.jsx  */
 
@@ -89,6 +109,16 @@
 
 
 /* Video.jsx */
+
+.video_image:after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
 
 
 .video_bg_blur {
@@ -260,6 +290,10 @@
 
 }
 
+.limit-to-1200-on-big-screen{
+    display: flex;
+}
+
 @media screen and (min-width : 1024px) {
     
     .testimonial_swiper{
@@ -276,6 +310,13 @@
     .blog_crousal{
         max-width: 1140px;
     }
+    .limit-to-1200-on-big-screen{
+        display: flex;
+        gap: 20px;
+        margin: auto;
+        max-width: 1300px;
+    }
+    
 }
 
 @media screen and (max-width : 700px) {

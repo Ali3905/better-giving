@@ -33,6 +33,10 @@ const Path = () => {
       title: "Fundraising Tools",
       description: "Access a diverse range of fundraising tools and resources, designed to assist organizations in raising funds, orchestrating campaigns, and fostering effective donor engagement.",
       img_src: "/card_3_image_1.png",
+    },  {
+      title: "Your Donation, Your Way",
+      description: "Use the giving method that works for you – from card and bank transfers to stock and crypto gifts",
+      img_src: "/Group 3.svg",
     },
   ])
 
@@ -44,10 +48,14 @@ const Path = () => {
           <h2 className='text-[32px] md:text-[42px] uppercase font-bold text-[#183244] lg:max-w-[75%] md:max-w-full text-balance mx-auto text-center Quicksand'>With Better Giving-Empower, Engage and Elevate</h2>
         </span>
         <span className='flex p-1 px-2 bg-[#F6EFE5] rounded-3xl gap-2 self-center'>
-          <span className={`${path === "non-profits" ? "bg-white" : "bg-transparent"} p-2 px-4 rounded-3xl DM_Sans`} onClick={() => setPath("non-profits")}>For Nonprofits</span>
-          <span className={`${path === "donors" ? "bg-white" : "bg-transparent"} p-2 px-4 rounded-3xl DM_Sans`} onClick={() => {setPath("donors"); console.log(12);}}>For Donors</span>
+          <span className={`${path === "non-profits" ? "bg-white" : "bg-transparent"} p-2 px-4 rounded-3xl cursor-pointer DM_Sans`} onClick={() => {setTimeout(() => {
+            setPath("non-profits")
+          }, 100); }}>For Nonprofits</span>
+          <span className={`${path === "donors" ? "bg-white" : "bg-transparent"} p-2 px-4 rounded-3xl cursor-pointer DM_Sans`} onClick={() => {setTimeout(() => {
+            setPath("donors")
+          }, 100); }}>For Donors</span>
         </span>
-        <p className='text-[18px] md:text-[28px] font-medium max-w-[70%] text-[#1D3C51] text-center text-balance mx-auto DM_Sans'>Accepting donations, support every giver, and offering services for free to charities all over the world.</p>
+        <p className='text-[18px] md:text-[28px] font-medium md:max-w-[70%] text-[#1D3C51] text-center text-balance mx-auto DM_Sans'>Accepting donations, support every giver, and offering services for free to charities all over the world.</p>
       </div>
       <BenefitssCrousal path={path} slides={path==="non-profits"?nonProfits:donors}/>
       <Crousal slides={path === "non-profits" ? nonProfits : donors} />

@@ -29,6 +29,16 @@ const Blogs = () => {
         description: "Medical aid where it's needed most — independent, neutral, impartial",
         tags: ["newstag", "newstag2"],
         thumbnail_src: "/blog_thumbnail_3.png"
+    }, {
+        title: "Is an endowment a realistic or even a good idea for a charity? Big or small?",
+        description: "Medical aid where it's needed most — independent, neutral, impartial",
+        tags: ["newstag", "newstag2"],
+        thumbnail_src: "/blog_thumbnail_2.png"
+    }, {
+        title: "Why donate to a ‘Long Tail’ Charity?",
+        description: "Medical aid where it's needed most — independent, neutral, impartial",
+        tags: ["newstag", "newstag2"],
+        thumbnail_src: "/blog_thumbnail_3.png"
     },
     ])
     
@@ -40,7 +50,8 @@ const Blogs = () => {
             <h2 className='text-[#183244] text-[32px] md:text-[42px] font-bold text-center Quicksand'>Check out the latest</h2>
             {/* <div className='flex gap-[40px] justify-evenly items-center'> */}
             <div className='hidden md:block lg:hidden absolute bg-white h-full w-[40%] z-[8] left-[-20%] blur-[100px] rounded-full'></div>
-                <button className='prev p-3 bg-white rounded-full border border-solid shadow absolute top-1/2 left-[2%] z-10 hidden md:block'>
+            <div className='limit-to-1200-on-big-screen'>
+                <button className='prev p-3 bg-white rounded-full border border-solid shadow lg:static lg:top-0 lg:left-0 absolute top-[50%] left-[2%] left_arrow z-10 hidden md:block self-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-[#2D89C8] w-[24px] h-[24px] font-bold">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
@@ -70,7 +81,7 @@ const Blogs = () => {
                         }
                       }}
                     navigation={{
-                        nextEl: '.next',
+                        nextEl: '.next-blog',
                         prevEl: '.prev',
                         clickable: true,
                     }}
@@ -88,11 +99,13 @@ const Blogs = () => {
                     {/* <SwiperSlide></SwiperSlide> */}
                 </Swiper>
                 {/* </div> */}
-                <button className='next p-3  bg-white rounded-full border border-solid z-10 shadow absolute top-1/2 right-[2%] hidden md:block'>
+                <button className='next-blog p-3  bg-white rounded-full border border-solid z-20 shadow lg:static lg:top-0 lg:right-0 absolute top-[50%] right-[2%] hidden md:block self-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-[#2D89C8] w-[24px] h-[24px] font-bold ">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
                 </button>
+
+                </div>
                 <div className='hidden md:block lg:hidden absolute bg-white h-full w-[40%] z-[8] right-[-20%] blur-[100px] rounded-full '></div>
             {/* </div> */}
 

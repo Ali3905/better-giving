@@ -47,7 +47,7 @@ const HeroBottom = () => {
   ]
 
   return (
-    <div className='relative bottom-[300px] z-10 pt-[150px] px-[24px] '>
+    <div className='relative bottom-[300px] lg:bottom-[250px] z-10 pt-[150px] px-[24px] '>
       <img src="/map.png" alt="map" className='absolute bottom-[-10%] left-0 -z-10'/>
       <svg viewBox="0 0 1440 1533" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute top-0 left-0 z-[-8] overflow-hidden w-full h-full'>
         <g opacity="0.2" filter="url(#filter0_f_443_2773)">
@@ -67,11 +67,12 @@ const HeroBottom = () => {
       <div className='flex flex-col items-center gap-14'>
         <span className='flex flex-col items-center gap-2 '>
           <h3 className='text-lg uppercase font-bold text-[#2D89C8] Quicksand text-[13px] md:text-[18px]'>Bridge to better</h3>
-          <h2 className='text-[32px] md:text-[42px] lg:w-full md:w-8/12 text-center uppercase font-bold text-[#183244] Quicksand'>Connecting Donors to Causes That Matter</h2>
+          <h2 className='text-[32px] md:text-[42px] lg:w-full md:w-8/12 text-center font-bold text-[#183244] Quicksand'>Connecting Donors to Causes That Matter</h2>
         </span>
         <div className='flex gap-7'>            
         <div className='hidden md:block lg:hidden absolute bg-white h-[70%] w-[40%] z-[8] left-[-20%] blur-[100px] rounded-full'></div>
-        <button className='p-3 bg-white rounded-full border border-solid shadow self-center cause-prev  absolute top-[50%] left-[2%] z-10 hidden md:block'>
+        <div className='limit-to-1200-on-big-screen'>
+        <button className='p-3 bg-white rounded-full border border-solid shadow self-center cause-prev  left_arrow z-10 hidden md:block'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-[#2D89C8] w-[24px] h-[24px] font-bold">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
@@ -117,23 +118,24 @@ const HeroBottom = () => {
           <SwiperSlide className=''></SwiperSlide> */}
           {/* <SwiperSlide className='lg:hidden'></SwiperSlide> */}
           </Swiper>
-        <button className='p-3  bg-white rounded-full border border-solid z-10 shadow self-center cause-next absolute top-[50%] right-[2%] hidden md:block'>
+        <button className='p-3  bg-white rounded-full border border-solid z-10 shadow self-center right_arrow cause-next hidden md:block'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-[#2D89C8] w-[24px] h-[24px] font-bold ">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
             </button>
+            </div>
                 <div className='hidden md:block lg:hidden absolute bg-white h-[70%] w-[40%] z-[8] right-[-20%] blur-[100px] rounded-full'></div>
         </div>
         <Button text={"Explore All Causes"} />
         <p className='bg-[#FFEECC] Gochi_Hand text-2xl py-1 px-8'>from all around the globe</p>
         {/* <img src="/map.svg" alt="map" className='absolute bottom-0 left-0 w-full h-full' /> */}
       </div>
-      <img src="/frame_1.png" alt="frame1" className='absolute top-[20%] left-[10%] -z-10'/>
-      <img src="/frame_2.png" alt="frame2" className='absolute top-[18%] left-[80%]  md:left-[70%] -z-10'/>
-      <img src="/frame_4.png" alt="frame3" className='absolute top-[50%] left-[0%] -z-10'/>
-      <img src="/frame_4.png" alt="frame4" className='absolute top-[30%] left-[35%] -z-10'/>
-      <img src="/frame_5.png" alt="frame5" className='absolute top-[30%] left-[95%] -z-10'/>
-      <img src="/frame_6.png" alt="frame6" className='absolute top-[45%] left-[90%] -z-10'/>
+      <img src="/frame_1.png" alt="frame1" className='img_frame absolute top-[15%] left-[5%] -z-10'/>
+      <img src="/frame_2.png" alt="frame2" className='img_frame absolute top-[8%] left-[80%]  -z-10'/>
+      <img src="/frame_4.png" alt="frame3" className='img_frame absolute top-[50%] left-[-4%] -z-10'/>
+      <img src="/frame_4.png" alt="frame4" className='img_frame absolute top-[30%] left-[35%] -z-10'/>
+      <img src="/frame_5.png" alt="frame5" className='img_frame absolute top-[30%] left-[97%] -z-10'/>
+      <img src="/frame_6.png" alt="frame6" className='img_frame absolute top-[45%] left-[90%] -z-10'/>
       {/* <img src="/frame_7.png" alt="frame7" className='absolute top-[20%] left-[10%] -z-10'/> */}
       {/* <img src="/frame_1.png" alt="frame" className='absolute top-[20%] left-[10%] -z-10'/> */}
     </div>
